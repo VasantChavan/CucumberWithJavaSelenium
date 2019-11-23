@@ -1,4 +1,4 @@
-/*package stepDefination;
+package stepDefination;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,13 +29,7 @@ public class LoginParameterStepDefination {
 		scn.write("done with system variable path setting");
 
 	}
-
 	
-	 * @After public void tearDown(Scenario s) {
-	 * 
-	 * driver.quit(); scn.write("close the browser instance "); }
-	 
-
 	@Given("^open the browser as \"([^\"]*)\"$")
 	public void open_the_browser_as(String brname) {
 
@@ -96,4 +90,3 @@ public class LoginParameterStepDefination {
 	}
 
 }
-*/

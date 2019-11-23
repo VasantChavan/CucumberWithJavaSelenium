@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="67.157113">
+<testcase classname="FreeCrm Pro login smoke scenarios" name="Verify Free Crm Pro login page" time="21.078208">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
+When titile of the login page is "CRMPRO"...................................passed
+Then user enter username as "Mayuri_257" and password as "Mayuri$257".......passed
+Then user click on login butten.............................................passed
+And titile of the home page is "CRMPRO".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FreeCrm Pro login smoke scenarios" name="Verify Free Crm Pro login page sanity testcases" time="15.975358">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
+When titile of the login page is "CRMPRO"...................................passed
+Then user enter username as "Mayuri_257" and password as "Mayuri$257".......passed
+Then user click on login butten.............................................passed
+And titile of the home page is "CRMPRO".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FreeCrm Pro login smoke scenarios" name="Verify Free Crm Pro login page sanity testcases 2" time="14.684715">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
+When titile of the login page is "CRMPRO"...................................passed
+Then user enter username as "Mayuri_2571" and password as "Mayuri$257"......passed
+Then user click on login butten.............................................passed
+And titile of the home page is "CRMPRO".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FreeCrm Pro login smoke scenarios" name="Verify Free Crm Pro login page sanity testcases 3" time="15.418832">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
+When titile of the login page is "CRMPRO"...................................passed
+Then user enter username as "Mayuri_257" and password as "Mayuri$2571"......passed
+Then user click on login butten.............................................passed
+And titile of the home page is "CRMPRO".....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

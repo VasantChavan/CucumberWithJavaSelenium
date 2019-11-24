@@ -7,19 +7,16 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+
+		//"html:test-output","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+		features = "classpath:features\\createNewAccount.feature",
+		// features="C:\\Users\\vasant\\workspace\\CucumberFreecrmProBDDFramework\\src\\main\\java\\features",
+		glue = { "stepDefination" },
+		format={"pretty","html:test-out"}
+		//plugin = { "pretty", "html:test-output"} //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
+		,monochrome = true,
+		dryRun = false
 		
-		features="classpath:features\\createNewAccount.feature",
-		//features="C:\\Users\\vasant\\workspace\\CucumberFreecrmProBDDFramework\\src\\main\\java\\features",
-			glue={"stepDefination"},
-			plugin={"pretty"},
-			dryRun=false,
-			monochrome=true
-			/*plugin={"pretty","html:test-output","json:json_output//cucumber.json",
-					"junit:junit_output//cucumber.xml"
-					,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-		
-			monochrome=true,
-			dryRun=false*/
 		)
 
 public class LoginTestRunner {

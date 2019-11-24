@@ -6,25 +6,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class WebDriverManagerSingleton {
+public class WebDriverManager {
 	
 	//Instance of Singleton Class
-	private static WebDriverManagerSingleton instanceOfSingletonClass=null;
+	private static WebDriverManager instanceOfSingletonClass=null;
 	private static WebDriver driver;
 	
 	//Private Constructor
-	private WebDriverManagerSingleton() {
+	private WebDriverManager() {
 		System.setProperty("webdriver.chrome.driver",
 				".//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	//To create instance of Class
-	public static WebDriverManagerSingleton getInstanceOfWebDriverManager() {
+	public static WebDriverManager getInstanceOfWebDriverManager() {
 		
 		if(instanceOfSingletonClass==null) {
-			instanceOfSingletonClass = new WebDriverManagerSingleton();
+			instanceOfSingletonClass = new WebDriverManager();
 		}
 		return instanceOfSingletonClass;
 	}

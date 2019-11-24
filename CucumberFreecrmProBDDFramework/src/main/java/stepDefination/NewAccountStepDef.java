@@ -13,18 +13,19 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import driverManager.WebDriverManagerSingleton;
+import driverManager.WebDriverManager;
+
 
 public class NewAccountStepDef {
 
 	WebDriver driver;
 	Scenario scn;
-	WebDriverManagerSingleton browserManager;
+	WebDriverManager browserManager;
 	
 	@Before
 	public void beforeMethod(Scenario scn){
 		this.scn=scn;
-		browserManager = WebDriverManagerSingleton.getInstanceOfWebDriverManager();
+		browserManager = WebDriverManager.getInstanceOfWebDriverManager();
 		driver = browserManager.getDriver();
 	}
 	
@@ -52,14 +53,14 @@ public class NewAccountStepDef {
 		scn.write("actualUname username from appli :" + actualUname);
 		Assert.assertTrue(actualUname.contains(username));
 
-		driver.switchTo().defaultContent();
+		//driver.switchTo().defaultContent();
 
 	}
 
 	@When("^navigate to new contact page$")
 	public void navigate_to_new_contact_page() {
 		scn.write("navigating to new contact page...");
-		driver.switchTo().frame("mainpanel");
+		//driver.switchTo().frame("mainpanel");
 		Actions act = new Actions(driver);
 		WebElement contact = driver.findElement(By.xpath("//a[text()='Contacts']"));
 		WebElement newContact = driver.findElement(By.xpath("//a[text()='New Contact']"));

@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 
 		//"html:test-output","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-		features = "classpath:features\\createNewAccount.feature",
+		features = "classpath:features\\deals.feature",
 		// features="C:\\Users\\vasant\\workspace\\CucumberFreecrmProBDDFramework\\src\\main\\java\\features",
 		glue = { "stepDefination" },
 		format={"pretty","html:test-out"}

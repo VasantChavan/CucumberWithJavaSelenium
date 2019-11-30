@@ -1,4 +1,4 @@
-package stepDefination;
+/*package stepDefination;
 
 import java.util.concurrent.TimeUnit;
 
@@ -71,7 +71,7 @@ public class LoginStepDefination {
 		scn.write("Title of the homepage is verified ......");
 	}
 
-	/*
+	
 	 * WebDriver driver;
 	 * 
 	 * Scenario scn;
@@ -118,6 +118,7 @@ public class LoginStepDefination {
 	 * title = driver.getTitle(); scn.write("Title of the home page is : " +
 	 * title); Assert.assertTrue(title.contains("CRMPRO"));
 	 * scn.write("Title of the homepage is verified ......"); }
-	 */
+	 
 
 }
+*/
